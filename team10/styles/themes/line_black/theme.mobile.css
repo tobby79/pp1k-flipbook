@@ -2,11 +2,11 @@
 /* 테마 관련 less(CSS Preprocessor) 변수
 /*********************************************************/
 /* 배경 색상 */
-@bg-color:                                  #f3f5f6;
+@bg-color:                                  #696969;
 
 /* 시작메뉴 스타일 */
 @startmenu-bg-color:                        none;
-@startmenu-icon-color:                      #353535;
+@startmenu-icon-color:                      #fff;
 @startmenu-active-icon-color:               #fff;
 @startmenu-box-shadow:                      none;
 @startmenu-active-bg-color:                 #4387f8;
@@ -18,11 +18,15 @@
 @landscape-startmenu-active-bg-color:       #4387f8;
 
 /* 가로모드일때 컨트롤바 배경색 */
-@landscape-control-bar-bg-color:            rgba(255, 255, 255, 1.0);
+@landscape-control-bar-bg-color:            rgba(0, 0, 0, 0.8);
 
 /* 상.하단 바 배경 색상 및 그림자 */
-@bar-bg-color:                              #fff;
+@bar-bg-color:                              #1b1b1b;
 @bar-box-shadow:                            0 0 5px rgba(0,0,0,.2);
+
+/* 줌툴바(확대축소바) 색상 */
+@zoom-bar-btn-bg-color:           rgba(0, 0, 0, 0.8);
+@zoom-bar-btn-icon-color:         #fff;
 
 /* 가로모드 전환시 시작메뉴 버튼 */
 @landscape-mode-start-menu-btn-bg-color:    #1b1b1b;
@@ -167,6 +171,12 @@ html[lang="ko"] .popup-share-modal button[command="sendKakaotalk"] { display: bl
     }
   }
 }
+.zoom-bar .btn {
+  color: @zoom-bar-btn-icon-color;
+  background: @zoom-bar-btn-bg-color; }
+.zoom-bar .btn:hover,
+.zoom-bar .btn:active {
+  background: @zoom-bar-btn-bg-color; }
 
 /* 목차리스트 */
 .toast-toc {

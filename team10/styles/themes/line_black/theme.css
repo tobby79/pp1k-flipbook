@@ -11,7 +11,7 @@
 /*********************************************************/
 
 /* 배경 색상 */
-@bg-color:                        #f3f5f6;
+@bg-color:                        #2a2b2f;
 
 /* 시작메뉴 스타일 */
 @startmenu-bg-color:              #4387f8;
@@ -21,33 +21,33 @@
 @startmenu-active-bg-color:       #4387f8;
 
 /* 상.하단 바 배경 색상 */
-@bar-bg-color:                    #fff;
-@bar-box-shadow:                  0 0 5px rgba(0,0,0,.2);
+@bar-bg-color:                    none;
+@bar-box-shadow:                  none;
 
 /* 활성화 상태일때 상단.하단 바 배경 색상 및 그림자 */
-@active-bar-bg-color:             #fff;
+@active-bar-bg-color:             rgba(0, 0, 0, 0.8);
 @active-bar-box-shadow:           0 0 5px rgba(0,0,0,.2);
 
 /* 줌툴바(확대축소바) 색상 */
-@zoom-bar-bg-color:               #fff;
+@zoom-bar-bg-color:               rgba(0, 0, 0, 0.8);
 @zoom-bar-box-shadow:             0 1px 5px rgba(0, 0, 0, 0.20);
-@zoom-bar-btn-bg-color:           #fff;
+@zoom-bar-btn-bg-color:           none;
 @zoom-bar-btn-active-bg-color:    #4387f8;
-@zoom-bar-btn-icon-color:         #2a2b2f;
+@zoom-bar-btn-icon-color:         #fff;
 @zoom-bar-btn-icon-active-color:  #fff;
 
 /* 입력상자 관련 색상*/
-@input-bg-color:                  white;
-@input-active-bg-color:           white;
-@input-text-color:                #000;
+@input-bg-color:                  #222222;
+@input-active-bg-color:           #222222;
+@input-text-color:                #fff;
 
-/* 버튼 관련 */
+/* 버튼 색상 */
 @btn-box-shadow:                  none;
 @btn-bg-color:                    none;
 @btn-active-bg-color:             #4387f8;
 
 /* 버튼 아이콘(SVG) 색상 */
-@btn-icon-color:                  #353535;
+@btn-icon-color:                  #fff;
 @btn-icon-active-color:           white;
 
 /* 버튼 레이블 색상 */
@@ -77,37 +77,38 @@
 @side-pn-btn-active-bg-color:     rgba(0, 0, 0, 0.7);
 
 /* 썸네일(전체보기) */
-@thumbnail-bg-color:                       white;
-@thumbnail-btn-icon-color:                 #353535;
+@thumbnail-bg-color:                       rgba(0, 0, 0, 0.5);
+@thumbnail-btn-icon-color:                 #fff;
 @thumbnail-nav-btn-box-shadow:             none;
 @thumbnail-nav-btn-bg-color:               rgba(0, 0, 0, 0.25);
 @thumbnail-nav-btn-active-bg-color:        rgba(0, 0, 0, 0.45);
 @thumbnail-nav-btn-icon-color:             #fff;
 @thumbnail-nav-btn-icon-active-color:      #fff;
 
+
 /* 목차리스트, 보관함(패널) */
-@panel-heading-bg-color:                   white;
-@panel-heading-text-color:                 black; 
-@panel-heading-bottom-border-color:        #dddddd;
-@panel-heading-btn-icon-color:             black;
-@panel-body-bg-color:                      white;
-@panel-body-text-color:                    black;
+@panel-heading-bg-color:                   #2a2b2f;
+@panel-heading-text-color:                 #fff; 
+@panel-heading-bottom-border-color:        #3d3f44;
+@panel-heading-btn-icon-color:             #fff;
+@panel-body-bg-color:                      #2a2b2f;
+@panel-body-text-color:                    #fff;
 @panel-body-row-line-color:                transparent;
-@panel-body-row-hover-bg-color:            #eee;
-@panel-body-row-select-bg-color:           #ddd;
-@panel-scroll-drag-color:                  #969696;
-@panel-scroll-drag-active-color:           #777777;
+@panel-body-row-hover-bg-color:            none;
+@panel-body-row-select-bg-color:           #434448;
+@panel-scroll-drag-color:                  #5c5d65;
+@panel-scroll-drag-active-color:           rgba(255, 255, 255, 0.5);
 @panel-scroll-track-color:                 none;
 @panel-scroll-track-active-color:          none;
-@panel-border-color:                       none;
+@panel-border-color:                       #3d3f44;
 
 /* 목차리스트 폴더.파일 아이콘 색상 */
 @toc-folder-icon-color:                    #4A606B;
-@toc-file-icon-color:                      black;
-@toc-folder-arrow-icon-color:              black;
+@toc-file-icon-color:                      #fff;
+@toc-folder-arrow-icon-color:              #fff;
 
 /* 구분선 색상 */
-@divider-color:                            #ddd;
+@divider-color:                            #404040;
 
 /*********************************************************/
 
@@ -904,124 +905,4 @@ html, body {}
 @media (min-width: 1280px) {
   .navbar-brand {
     display: table; }
-}
-
-
-/**
- * 메뉴바형 테마
- */
-.desktop {
-  
-  .navbar {
-    
-    .translucent {
-      background: none;  
-      box-shadow: none;
-    }
-
-    .navbar-brand {
-      display: none; }
-
-    .btn-toolbar:not(.btn-small-toolbar) {
-      position: absolute;
-      left: 50%;
-      right: auto;
-      min-width: 1400px;
-      -webkit-transform: translate(-50%, 0%);
-          -ms-transform: translate(-50%, 0%);
-              transform: translate(-50%, 0%);
-
-      > .btn-group {
-        padding-left: 10px;
-        padding-right: 10px;
-
-        margin-left: 0;
-        margin-right: 0;
-        height: 100%; 
-        
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        background: @bar-bg-color;
-        box-shadow: @bar-box-shadow;
-      }
-    }
-
-    .btn-group {
-      margin-left: 0;
-      margin-right: 0;
-      height: 100%; 
-
-      .btn-group { display: inline-block; }
-      
-      > .btn:first-child {
-        margin-left: 0 !important; }
-      > .btn:last-child {
-        margin-right: 0 !important; }
-    }
-    
-    .btn-group.navigate {
-      margin-left: 15px !important;
-      margin-right: 15px !important; 
-
-      .btn {
-        margin-left: 5px !important;
-        margin-right: 5px !important;
-      }
-
-      .btn:not(.btn-pagelabel) {
-        padding: 0;
-        width: 32px;
-
-        .icon {
-          width: 28px;
-          height: 28px;
-          padding: 2px;
-          margin-top: 5px;
-        }
-      }
-    }
-
-    .btn {
-      margin-left: 10px !important;
-      margin-right: 10px !important;
-      border-radius: 0 !important; }
-      
-  }/* navbar */
-}
-
-.desktop .controlbar {
-  display: none; }
-
-.desktop .book-container {
-  bottom: 5px; }
-
-.desktop {
-  @media (max-width: 991px) {
-    .book-container {
-      bottom: 60px; }    
-    .navbar .btn.btn-balance {
-      display: none;}    
-  }
-
-  @media (max-width: 640px) {
-    .navbar .navigate { display: none !important; }
-    .controlbar { display: block; }
-    .navbar {
-      .navbar-brand {
-        display: table !important; }
-      .btn {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-      }
-      .translucent {
-        background: @bar-bg-color;
-        box-shadow: @bar-box-shadow;
-      }
-    }
-  }
-
-  @media (min-width: 1350px) {
-    .navbar-brand {
-      display: table !important; }
-  }
 }

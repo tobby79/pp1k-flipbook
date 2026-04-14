@@ -1,7 +1,7 @@
 {
   "homepage_url": "https://itoast.kr",
   "help_url": "https://itoast.kr",
-  "theme": "simple",
+  "theme": "line_black",
   "transition": "flip",
   "extensions": []
 }

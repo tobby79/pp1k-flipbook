@@ -1,9 +1,9 @@
 {
-    "label": "단순형",
+    "label": "라인 블랙",
     "version": 1.0,
-    "locales": {
+    "locales": { 
     	"label": {
-    		"root": "Simple"
+    		"root": "Line Black"	
     	}
   	},
     "config": {},
