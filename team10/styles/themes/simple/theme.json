@@ -1,0 +1,11 @@
+{
+    "label": "단순형",
+    "version": 1.0,
+    "locales": {
+    	"label": {
+    		"root": "Simple"
+    	}
+  	},
+    "config": {},
+    "templates": {}
+}
