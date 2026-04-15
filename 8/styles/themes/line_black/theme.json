@@ -1,0 +1,11 @@
+{
+    "label": "라인 블랙",
+    "version": 1.0,
+    "locales": { 
+    	"label": {
+    		"root": "Line Black"	
+    	}
+  	},
+    "config": {},
+    "templates": {}
+}
